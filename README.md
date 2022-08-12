@@ -9,7 +9,7 @@
   <a href="https://github.com/AndreaPallotta/EzWebTemplate/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/AndreaPallotta/EzWebTemplate/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/AndreaPallotta/EzWebTemplate/blob/master/LICENSE.md" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/AndreaPallotta/ez-templates" />
   </a>
 </p>
