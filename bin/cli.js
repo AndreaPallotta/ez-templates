@@ -1,11 +1,11 @@
 const chalk = require('chalk');
 const clear = require('clear');
-const degit = require('degit');
 const figlet = require('figlet');
 
 const questions = require('../lib/questions');
 const defaults = require('../lib/defaults');
 const resolvePath = require('../lib/resolver');
+const cloneRepo = require('../lib/repo');
 
 clear();
 
@@ -41,12 +41,17 @@ const run = async () => {
 
     if (!confirm) {
       console.log(chalk.red('Aborted!'));
-      return;
+      process.exit(1);
     }
 
-    
+    res.forEach(({ template, subrepo, path }) => {
+      cloneRepo(template, subrepo, path);
+    });
+
+    console.log();
   } catch (err) {
     console.log(chalk.red(`Error: ${err}`));
+    process.exit(1);
   }
 };
 
