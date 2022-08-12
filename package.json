@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "npx command to install web templates",
   "bin": {
-    "multiply": "./bin/cli.js"
+    "ezp": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
