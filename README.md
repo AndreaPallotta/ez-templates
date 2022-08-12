@@ -23,12 +23,16 @@
 
 ```sh
 npm install ez-templates -g
+# or
+npm install ezp -g
 ```
 
 ## Usage
 
 ```sh
 npx ez-templates
+# or
+npx ezp
 ```
 
 ## Author
@@ -40,7 +44,7 @@ npx ez-templates
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AndreaPallotta/EzWebTemplate/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AndreaPallotta/EzWebTemplate/issues).
 
 ## Show your support
 
