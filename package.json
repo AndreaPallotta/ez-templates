@@ -1,7 +1,7 @@
 {
   "name": "ez-templates",
   "version": "1.0.0",
-  "description": "npx command to install web templates",
+  "description": "A simple npx command to install custom-made web templates",
   "bin": {
     "ezp": "./bin/cli.js"
   },
@@ -39,6 +39,7 @@
     "inquirer": "^8.0.0",
     "is-valid-path": "^0.1.1",
     "lodash": "^4.17.21",
-    "minimist": "^1.2.6"
+    "minimist": "^1.2.6",
+    "readme-md-generator": "^1.0.0"
   }
 }
