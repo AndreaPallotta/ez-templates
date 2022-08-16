@@ -52,7 +52,7 @@ const run = async () => {
 
     for await (const { template, subrepo, path } of res) {
       if (subrepo === 'socketio') {
-        console.log(chalk.red(`${template} is not supported yet. Skipping...`));
+        console.log(chalk.yellow.underline(`${template} is still incomplete!`));
         return;
       }
       await cloneRepo(template, subrepo, path);
