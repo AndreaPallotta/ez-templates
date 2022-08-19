@@ -35,6 +35,15 @@ npx ez-templates
 npx ezp
 ```
 
+## Available templates
+
+All available templates are public and can be found in this [repo](https://github.com/AndreaPallotta/Templates)
+
+* Express JS
+* Socket.IO
+* React JS (MUI included)
+* Elixir
+
 ## Author
 
 👤 **Andrea Pallotta**
