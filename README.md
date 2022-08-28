@@ -13,7 +13,11 @@
   <a href="https://github.com/AndreaPallotta/EzWebTemplate/blob/master/LICENSE.md" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/AndreaPallotta/ez-templates" />
   </a>
-  <img alt="downloads" src="https://img.shields.io/npm/dt/ez-templates">
+  <a href="https://github.com/AndreaPallotta/ez-templates/issues" target="_blank">
+    <img alt="Issues" src="https://img.shields.io/github/issues/AndreaPallotta/EzWebTemplate" />
+  </a>
+  <img alt="downloads" src="https://img.shields.io/npm/dt/ez-templates" />
+  <img alt="stars" src="https://img.shields.io/github/stars/AndreaPallotta/ez-templates" />
 </p>
 
 > A simple npx command to install custom-made web templates
