@@ -24,6 +24,10 @@
 
 ### 🏠 [Homepage](https://github.com/AndreaPallotta/EzWebTemplate#readme)
 
+## Preview
+
+<img alt="Preview" src="preview.png" />
+
 ## Install
 
 ```sh
