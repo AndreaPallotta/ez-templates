@@ -17,12 +17,20 @@ console.log(chalk.yellow(figlet.textSync('Ez-Templates')));
 
 const run = async () => {
   const res = [];
+
   try {
     const { templates } = await questions.askTemplate();
     console.log();
 
     for (const template of templates) {
-      const { defaultName, subrepo } = defaults[template];
+      const { defaultName, subrepo, managers } = defaults[template];
+
+      if (managers?.length > 1) {
+        var { manager } = await questions.askManager(template, managers);
+        console.log();
+      } else {
+        var manager = managers[0];
+      }
 
       const { folder } = await questions.askFolderName(
         template,
@@ -31,16 +39,19 @@ const run = async () => {
       console.log();
 
       const { path } = await questions.askPath(template);
+
       console.log();
       res.push({
         template: template,
         folder_name: folder,
         subrepo: subrepo,
         path: resolvePath(path, folder),
+        manager: manager ?? '',
       });
     }
 
-    const { confirm } = await questions.askConfirm(res);
+    console.table(res);
+    const { confirm } = await questions.askConfirm();
     console.log();
 
     if (!confirm) {
@@ -50,19 +61,20 @@ const run = async () => {
 
     console.log(chalk.magenta('Cloning repositories...'));
 
-    for await (const { template, subrepo, path } of res) {
-      await cloneRepo(template, subrepo, path);
-      console.log(chalk.green(`Cloned ${template} repo to ${path}`));
+    for await (const obj of res) {
+      const { template, subrepo, path, manager } = obj;
 
-      if (subrepo === 'express' || subrepo === 'react') {
-        setup(template, path, 'npm', true);
-      } else if (subrepo === 'elixir_server') {
-        setup(template, path, 'elixir', false);
+      await cloneRepo(template, subrepo, path);
+      console.log();
+
+      if (manager) {
+        setup(template, path, manager);
       }
+      console.log();
+      console.log();
     }
-    console.log();
   } catch (err) {
-    console.log(chalk.red.bold(`Error: ${err}`));
+    console.log(chalk.red.bold(`Error setting up template: ${err.message}`));
     process.exit(1);
   }
 };
