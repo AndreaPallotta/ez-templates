@@ -22,11 +22,17 @@
 
 > A simple npx command to install custom-made web templates
 
+---
+<br />
+
 ### 🏠 [Homepage](https://github.com/AndreaPallotta/EzWebTemplate#readme)
 
 ## Preview
 
 <img alt="Preview" src="preview.png" />
+
+---
+<br />
 
 ## Install
 
@@ -41,8 +47,11 @@ npm install ezp -g
 ```sh
 npx ez-templates
 # or
-npx ezp
+ezp
 ```
+
+---
+<br />
 
 ## Available templates
 
@@ -53,25 +62,42 @@ All available templates are public and can be found in this [repo](https://githu
 * React JS (MUI included)
 * Elixir
 
+---
+<br /> 
+
 ## Author
 
 👤 **Andrea Pallotta**
 
 * Github: [@AndreaPallotta](https://github.com/AndreaPallotta)
-* LinkedIn: [@andreapallotta9](https://linkedin.com/in/andreapallotta9)
+
+> For inquiries, suggestions, and criticisms, you can reach me via:
+> * email: [andreapallotta9@gmail.com](mailto:andreapallotta9@gmail.com)
+> * LinkedIn: [@andreapallotta9](https://linkedin.com/in/andreapallotta9)
+
+---
+<br /> 
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AndreaPallotta/EzWebTemplate/issues).
 
+If you have your own template repository, I suggest to clone this tool and change the source repository!
+
+---
+<br /> 
+
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+This is my first npm package and I believe there is still
+much to improve.
+<br />
+Give a ⭐️ if you found this tool useful or interesting!
+
+---
+<br /> 
 
 ## 📝 License
 
 Copyright © 2022 [Andrea Pallotta](https://github.com/AndreaPallotta).<br />
 This project is [MIT](https://github.com/AndreaPallotta/EzWebTemplate/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
