@@ -27,13 +27,6 @@
 
 ### 🏠 [Homepage](https://github.com/AndreaPallotta/EzWebTemplate#readme)
 
-## Preview
-
-<img alt="Preview" src="preview.png" />
-
----
-<br />
-
 ## Install
 
 ```sh
@@ -45,10 +38,17 @@ npm install ezp -g
 ## Usage
 
 ```sh
-npx ez-templates
-# or
 ezp
+# or
+npx ez-templates
 ```
+
+---
+<br />
+
+## Preview
+
+<img alt="Preview" src="preview.png" />
 
 ---
 <br />
