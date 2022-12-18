@@ -89,8 +89,8 @@ If you have your own template repository, I suggest to clone this tool and chang
 
 ## Show your support
 
-This is my first npm package and I believe there is still
-much to improve.
+This is my first npm package and there is still
+much to improve. I am open to suggestions via email/Linkedin
 <br />
 Give a ⭐️ if you found this tool useful or interesting!
 
