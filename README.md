@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to ez-templates 👋</h1>
 
-<img alt="Logo" src="logo.png" />
+<img alt="Logo" src="logo.svg" style="width: 75px; height: auto; padding-bottom: 2rem;" />
 <p>
   <a href="https://www.npmjs.com/package/ez-templates" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/ez-templates.svg">
