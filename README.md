@@ -1,6 +1,3 @@
-<h1 align="center">Welcome to ez-templates 👋</h1>
-
-<img alt="Logo" src="logo.svg" style="width: 75px; height: auto; padding-bottom: 2rem;" />
 <p>
   <a href="https://www.npmjs.com/package/ez-templates" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/ez-templates.svg">
@@ -20,6 +17,11 @@
   <img alt="downloads" src="https://img.shields.io/npm/dt/ez-templates" />
   <img alt="stars" src="https://img.shields.io/github/stars/AndreaPallotta/ez-templates" />
 </p>
+
+<div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+  <img alt="Logo" src="logo.svg" style="width: 75px; height: auto; margin-right: 1rem;" />
+  <h1>Welcome to ez-templates 👋</h1>
+</div>
 
 > A simple npx command to install custom-made web templates
 
