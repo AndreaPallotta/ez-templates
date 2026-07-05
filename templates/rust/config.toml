@@ -1,0 +1,12 @@
+[Server]
+env = "production" # development | production. If the value is wrong or missing, default to 'development'
+host = "0.0.0.0" # If invalid, it will default to 0.0.0.0
+port = 3000
+secret = "supers3cret" # JWT to generate tokens
+#origins = ["http://rans.iste444.com"] # Array of IPs/Domains allowed to make requests. Remove to accept all origins
+
+[Logs]
+path = "./logs/rans"
+level = "info" # off | debug | trace | info | warn | error
+
+# Add new sections here and parse them in src/config.rs file

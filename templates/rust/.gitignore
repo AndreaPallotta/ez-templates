@@ -1,0 +1,4 @@
+.vscode
+logs
+config/**/*local*
+target

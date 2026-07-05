@@ -1,115 +1,76 @@
-<p>
-  <a href="https://www.npmjs.com/package/ez-templates" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/ez-templates.svg">
-  </a>
-  <a href="https://github.com/AndreaPallotta/EzWebTemplate#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/AndreaPallotta/EzWebTemplate/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/AndreaPallotta/EzWebTemplate/blob/master/LICENSE.md" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/AndreaPallotta/ez-templates" />
-  </a>
-  <a href="https://github.com/AndreaPallotta/ez-templates/issues" target="_blank">
-    <img alt="Issues" src="https://img.shields.io/github/issues/AndreaPallotta/EzWebTemplate" />
-  </a>
-  <img alt="downloads" src="https://img.shields.io/npm/dt/ez-templates" />
-  <img alt="stars" src="https://img.shields.io/github/stars/AndreaPallotta/ez-templates" />
-</p>
+# ez-templates
 
-<div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
-  <img alt="Logo" src="logo.svg" style="width: 75px; height: auto; margin-right: 1rem;" />
-  <h1>Welcome to ez-templates 👋</h1>
-</div>
+[![npm version](https://img.shields.io/npm/v/ez-templates.svg)](https://www.npmjs.com/package/ez-templates)
+[![License: MIT](https://img.shields.io/github/license/AndreaPallotta/ez-templates)](file:///c:/Users/andre/OneDrive/Desktop/projects/ez-templates/LICENSE.md)
 
-> A simple npx command to install custom-made web templates
+A simple, fast, and fully offline CLI tool to bootstrap pre-configured project templates.
 
 ---
 
-<br />
+## Installation
 
-### 🏠 [Homepage](https://github.com/AndreaPallotta/EzWebTemplate#readme)
-
-## Install
-
+Run directly without installing:
 ```sh
-npm install ez-templates -g
-# or
-npm install ezp -g
-```
-
-## Usage
-
-```sh
-ezp
-# or
 npx ez-templates
 ```
 
----
-
-<br />
-
-## Preview
-
-<img alt="Preview" src="preview.png" />
+Or install globally:
+```sh
+npm install -g ez-templates
+```
 
 ---
 
-<br />
+## Usage
 
-## Available templates
+### Interactive Mode
+Run the command without options to start the interactive walkthrough:
+```sh
+ezp
+```
 
-All available templates are public and can be found in this [repo](https://github.com/AndreaPallotta/Templates)
+### CLI Options (Non-Interactive Mode)
+Configure template bootstrapping directly via command line flags:
+```sh
+ezp [options]
+```
 
-- Express JS
-- Socket.IO
-- React JS (MUI included)
-- Elixir
-- Rust (Axum)
+| Flag | Option | Description |
+| --- | --- | --- |
+| `-t` | `--template <name>` | Template(s) to clone (express, socketio, react, rust, elixir, go) |
+| `-n` | `--name <name>` | Custom folder name for the cloned template |
+| `-p` | `--path <path>` | Target parent directory path (default: current directory) |
+| `-m` | `--manager <name>` | Package manager to run setup/dependencies install (npm, yarn, mix, cargo, go) |
+| `-y` | `--yes` | Skip confirmation prompts and use defaults for missing options |
+| `-h` | `--help` | Show usage and options information |
+| `-v` | `--version` | Show current CLI version |
 
----
-
-<br />
-
-## Author
-
-👤 **Andrea Pallotta**
-
-- Github: [@AndreaPallotta](https://github.com/AndreaPallotta)
-
-> For inquiries, suggestions, and criticisms, you can reach me via:
->
-> - email: [andreapallotta.dev@gmail.com](mailto:andreapallotta.dev@gmail.com)
-> - LinkedIn: [@andreapallotta9](https://linkedin.com/in/andreapallotta9)
-
----
-
-<br />
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AndreaPallotta/EzWebTemplate/issues).
-
-If you have your own template repository, I suggest to clone this tool and change the source repository!
+#### Examples
+- Clone the Express TS template using defaults without prompts:
+  ```sh
+  ezp -t express -y
+  ```
+- Clone multiple templates (Express and React) to a custom path:
+  ```sh
+  ezp -t express -t react -p ./my-workspace
+  ```
 
 ---
 
-<br />
+## Available Templates
 
-## Show your support
+All templates are packaged locally within the CLI and clone instantly offline:
 
-This is my first npm package and I believe there is still
-much to improve.
-<br />
-Give a ⭐️ if you found this tool useful or interesting!
+- **Express TS** (`express`): Modern Express.js server written in TypeScript with native tests.
+- **Socket.io TS** (`socketio`): WebSocket server template written in TypeScript.
+- **ReactJS + MUI TS** (`react`): Vite, React, Material UI (MUI), and TypeScript boilerplate.
+- **Rust + Axum** (`rust`): High-performance, secure REST API server written in Rust.
+- **Elixir Server** (`elixir`): Backend server template in Elixir.
+- **Go HTTP API** (`go`): Clean and modern REST API server using Go standard library (compatible with Go 1.22+).
 
 ---
 
-<br />
+## License
 
-## 📝 License
-
-Copyright © 2022 [Andrea Pallotta](https://github.com/AndreaPallotta).<br />
-This project is [MIT](https://github.com/AndreaPallotta/EzWebTemplate/blob/master/LICENSE) licensed.
+Copyright © 2022 [Andrea Pallotta](https://github.com/AndreaPallotta).  
+Licensed under the [MIT License](file:///c:/Users/andre/OneDrive/Desktop/projects/ez-templates/LICENSE.md).
