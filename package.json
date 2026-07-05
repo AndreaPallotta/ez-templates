@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreaPallotta/EzWebTemplate.git"
+    "url": "git+https://github.com/AndreaPallotta/ez-templates.git"
   },
   "keywords": [
     "npm",
@@ -27,9 +27,9 @@
   "author": "Andrea Pallotta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AndreaPallotta/EzWebTemplate/issues"
+    "url": "https://github.com/AndreaPallotta/ez-templates/issues"
   },
-  "homepage": "https://github.com/AndreaPallotta/EzWebTemplate#readme",
+  "homepage": "https://github.com/AndreaPallotta/ez-templates#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
