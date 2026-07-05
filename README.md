@@ -1,9 +1,32 @@
 # ez-templates
 
-[![npm version](https://img.shields.io/npm/v/ez-templates.svg)](https://www.npmjs.com/package/ez-templates)
-[![License: MIT](https://img.shields.io/github/license/AndreaPallotta/ez-templates)](file:///c:/Users/andre/OneDrive/Desktop/projects/ez-templates/LICENSE.md)
+<p align="left">
+  <a href="https://www.npmjs.com/package/ez-templates">
+    <img src="https://img.shields.io/npm/v/ez-templates.svg" alt="npm version" />
+  </a>
+  <a href="https://github.com/AndreaPallotta/EzWebTemplate/actions/workflows/publish.yml">
+    <img src="https://github.com/AndreaPallotta/EzWebTemplate/actions/workflows/publish.yml/badge.svg" alt="Build Status" />
+  </a>
+  <a href="https://www.npmjs.com/package/ez-templates">
+    <img src="https://img.shields.io/npm/dm/ez-templates.svg" alt="npm downloads" />
+  </a>
+  <a href="https://github.com/AndreaPallotta/EzWebTemplate/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/github/license/AndreaPallotta/ez-templates" alt="License: MIT" />
+  </a>
+  <a href="https://github.com/AndreaPallotta/EzWebTemplate/stargazers">
+    <img src="https://img.shields.io/github/stars/AndreaPallotta/EzWebTemplate.svg" alt="GitHub Stars" />
+  </a>
+</p>
 
 A simple, fast, and fully offline CLI tool to bootstrap pre-configured project templates.
+
+---
+
+## Preview
+
+<p align="left">
+  <img src="preview.png" alt="ez-templates CLI Preview" width="600" />
+</p>
 
 ---
 
